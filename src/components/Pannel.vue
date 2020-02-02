@@ -5,7 +5,7 @@
 			<span>UNE IMAGE</span>
 		</div>
 		<div class="text-container">
-			<span>Réseau social</span>
+			<span>{{socialMedia}}</span>
 		</div>
   </div>
 </template>
@@ -13,6 +13,12 @@
 <script>
 export default {
 	name: "home",
+	props: {
+		socialMedia: {
+			type: String,
+			default: "Facebook"
+		}
+	}
 }
 </script>
 
