@@ -28,7 +28,7 @@
         id="chat_embed"
         src="https://www.twitch.tv/embed/e_taverne/chat"
         height="500"
-        width="350"
+        width="300"
       >
       </iframe>
     </div>
