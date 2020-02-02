@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/">Live</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
@@ -17,15 +17,19 @@
   color: #2c3e50;
   display: flex;
   flex-direction: row;
-  border: solid salmon 2px
+  border: solid salmon 2px;
+  height: 100%;
 }
-
+html,
+body {
+  margin: 0;
+  /* height: 100%; */
+}
 #nav {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  position: fixed;
-  border: solid black 2px
+  border: solid black 2px;
 }
 
 #nav a {
