@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
+      <img class="image" src="./assets/logo_etaverne.png" alt="">
       <router-link class="item-nav" to="/">Live</router-link>
       <router-link class="item-nav" to="/programmation">Programmation</router-link>
       <router-link class="item-nav" to="/videos">Vidéos</router-link>
@@ -33,11 +34,14 @@ body {
   margin: 0;
   height: 100%;
 }
+.image {
+  width: 100px;
+}
 #nav {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  position:fixed;
+  /* position:fixed; */
   /* border: solid black 2px; */
   background-color: #212121
 }
