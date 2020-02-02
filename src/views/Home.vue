@@ -20,9 +20,9 @@
       </iframe>
     </div>
     <div class="section social-media-pannel">
-      <Pannel></Pannel>
-      <Pannel></Pannel>
-      <Pannel></Pannel>
+      <Pannel :socialMedia="'Facebook'"></Pannel>
+      <Pannel :socialMedia="'Instagram'"></Pannel>
+      <Pannel :socialMedia="'Discord'"></Pannel>
     </div>
     <div class="section team">
       <TeamMember></TeamMember>
