@@ -10,6 +10,10 @@
   </div>
 </template>
 
+<script>
+
+</script>
+
 <style>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -21,16 +25,19 @@
   flex-direction: row;
   border: solid salmon 2px;
   height: 100%;
+  background-image: url("./assets/background.png");
+  background-repeat: repeat;
 }
 html,
 body {
   margin: 0;
-  /* height: 100%; */
+  height: 100%;
 }
 #nav {
   padding: 30px;
   display: flex;
   flex-direction: column;
+  position:fixed;
   /* border: solid black 2px; */
   background-color: #212121
 }
