@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <!-- Add a placeholder for the Twitch embed -->
     <div class="section twitch-container">
       <VueTwitchPlayer
         :width="'960'"
