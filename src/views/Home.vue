@@ -1,19 +1,37 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed">
+      <VueTwitchPlayer :width="'1080'" :height="'720'" :channel="channel"></VueTwitchPlayer>
+      <!-- iframe for the chat -->
+      <iframe
+        class="chat" 
+        frameborder="0"
+        scrolling="no"
+        id="chat_embed"
+        src="https://www.twitch.tv/embed/e_taverne/chat"
+        height="500"
+        width="350">
+      </iframe>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+// import HelloWorld from "@/components/HelloWorld.vue";
+import VueTwitchPlayer from "vue-twitch-player";
 export default {
   name: "home",
   components: {
-    HelloWorld
-  }
+    VueTwitchPlayer
+  },
+
+  data() {
+    return {
+      channel: "tserkov",
+    };
+  },
 };
 </script>
 
