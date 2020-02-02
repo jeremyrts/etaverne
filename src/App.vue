@@ -36,11 +36,6 @@
   color: #212121;
   display: flex;
   flex-direction: row;
-  /* position: fixed; */
-  /* overflow: scroll; */
-  /* right: 0; */
-  /* width: 100%; */
-  /* border: solid salmon 2px; */
   height: 100%;
   background-image: url("./assets/background.png");
   background-repeat: repeat;
