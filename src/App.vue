@@ -29,15 +29,17 @@ body {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  border: solid black 2px;
+  /* border: solid black 2px; */
+  background-color: #212121
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  /* color: #2c3e50; */
+  color: white;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #992BE5
 }
 </style>
