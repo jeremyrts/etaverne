@@ -19,6 +19,8 @@
         </div>
       </div>
     </div>
+    <!-- Blank div to center the content -->
+    <div class="blank"></div>
     <router-view />
   </div>
 </template>
@@ -76,6 +78,9 @@ body {
 }
 #nav a.router-link-exact-active {
   color: #992BE5
+}
+.blank {
+  width: 100px;
 }
 .item-container {
   display: flex;
