@@ -2,10 +2,10 @@
 	<div class="pannel">
 		<!-- Une image -->
 		<div class="image-container">
-			<span>UNE IMAGE</span>
+			<p>UNE IMAGE</p>
 		</div>
 		<div class="text-container">
-			<span>{{socialMedia}}</span>
+			<p>{{socialMedia}}</p>
 		</div>
   </div>
 </template>
