@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="low-part">
-        <p>E-Taverne 2020</p>
+        <p>E-Taverne ©2020</p>
         <div class="social-media-footer">
           <span>Les reseaux sociaux</span>
         </div>
