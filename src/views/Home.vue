@@ -20,7 +20,7 @@
         scrolling="no"
         id="chat_embed"
         src="https://www.twitch.tv/embed/e_taverne/chat"
-        height="500"
+        height="450"
         width="300"
       >
       </iframe>
@@ -31,9 +31,11 @@
       <Pannel :socialMedia="'Discord'"></Pannel>
     </div>
     <div class="section team">
-      <TeamMember></TeamMember>
-      <TeamMember></TeamMember>
-      <TeamMember></TeamMember>
+      <TeamMember :pseudo="'Auram'"></TeamMember>
+      <TeamMember :pseudo="'Reyxwe'"></TeamMember>
+      <TeamMember :pseudo="'Vexos'"></TeamMember>
+      <TeamMember :pseudo="'Vexos'"></TeamMember>
+      <TeamMember :pseudo="'Vexos'"></TeamMember>
     </div>
   </div>
 </template>
@@ -62,9 +64,9 @@ export default {
 
 <style scoped>
 .home {
-  /* border: solid red 2px; */
   width: 100%;
   height: 100%;
+  margin-left: 100px
 }
 .section {
   display: flex;
@@ -87,7 +89,13 @@ export default {
   margin: auto
 }
 .team {
-  width: 80%;
-  margin: 30px auto
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  width: 75%;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 </style>

@@ -36,6 +36,10 @@
   color: #212121;
   display: flex;
   flex-direction: row;
+  /* position: fixed; */
+  /* overflow: scroll; */
+  /* right: 0; */
+  /* width: 100%; */
   /* border: solid salmon 2px; */
   height: 100%;
   background-image: url("./assets/background.png");
@@ -55,10 +59,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* position: fixed; */
+  position: fixed;
+  top:0;
+  bottom: 0;
   /* height: 100%; */
   /* border: solid black 2px; */
-  background-color: #212121
+  background-color: #212121;
 }
 
 #nav a, span {
@@ -73,8 +79,6 @@ body {
 #nav p {
   color: white;
 }
-
-
 #nav a.router-link-exact-active {
   color: #992BE5
 }
