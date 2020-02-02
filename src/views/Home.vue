@@ -83,6 +83,7 @@ export default {
   border: 4px solid #212121;
   box-sizing: border-box;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+  background-color: white;
 }
 .chat {
   margin-left:80px
