@@ -1,14 +1,28 @@
 <template>
   <div class="home">
     <div class="section twitch-container">
-      <VueTwitchPlayer
-        :width="'960'"
-        :height="'540'"
-        :channel="channel"
-      ></VueTwitchPlayer>
+      <div class="player-container">
+        <!-- <VueTwitchPlayer
+          class="canvas"
+          :width="'800'"
+          :height="'450'"
+          :channel="channel"
+          :quality="'auto'"
+        ></VueTwitchPlayer> -->
+        <iframe
+          class="canvas"
+          src="https://player.twitch.tv/?channel=e_taverne"
+          height="450"
+          width="800"
+          frameborder="<frameborder>"
+          scrolling="<scrolling>"
+          allowfullscreen="<allowfullscreen>"
+        >
+        </iframe>
+      </div>
       <!-- iframe for the chat -->
       <iframe
-        class="chat"
+        class="canvas chat"
         frameborder="0"
         scrolling="no"
         id="chat_embed"
@@ -34,13 +48,13 @@
 <script>
 // @ is an alias to /src
 // import HelloWorld from "@/components/HelloWorld.vue";
-import VueTwitchPlayer from "vue-twitch-player";
+// import VueTwitchPlayer from "vue-twitch-player";
 import Pannel from "@/components/Pannel.vue";
 import TeamMember from "@/components/TeamMember.vue";
 export default {
   name: "home",
   components: {
-    VueTwitchPlayer,
+    // VueTwitchPlayer,
     Pannel,
     TeamMember,
   },
@@ -64,6 +78,14 @@ export default {
   flex-direction: row;
   justify-content: center;
   margin: 30px;
+}
+.canvas {
+  border: 4px solid #212121;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+.chat {
+  margin-left:80px
 }
 .social-media-pannel {
   justify-content: space-around;
