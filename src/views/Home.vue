@@ -34,8 +34,6 @@
       <TeamMember :pseudo="'Auram'"></TeamMember>
       <TeamMember :pseudo="'Reyxwe'"></TeamMember>
       <TeamMember :pseudo="'Vexos'"></TeamMember>
-      <TeamMember :pseudo="'Vexos'"></TeamMember>
-      <TeamMember :pseudo="'Vexos'"></TeamMember>
     </div>
   </div>
 </template>
@@ -72,7 +70,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 30px;
+  margin: 50px 0;
 }
 .canvas {
   border: 4px solid #000000;
