@@ -2,13 +2,6 @@
   <div class="home">
     <div class="section twitch-container">
       <div class="player-container">
-        <!-- <VueTwitchPlayer
-          class="canvas"
-          :width="'800'"
-          :height="'450'"
-          :channel="channel"
-          :quality="'auto'"
-        ></VueTwitchPlayer> -->
         <iframe
           class="canvas"
           src="https://player.twitch.tv/?channel=e_taverne"
@@ -69,7 +62,7 @@ export default {
 
 <style scoped>
 .home {
-  border: solid red 2px;
+  /* border: solid red 2px; */
   width: 100%;
   height: 100%;
 }
@@ -80,9 +73,9 @@ export default {
   margin: 30px;
 }
 .canvas {
-  border: 4px solid #212121;
+  border: 4px solid #000000;
   box-sizing: border-box;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
   background-color: white;
 }
 .chat {
