@@ -16,3 +16,10 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+  .home {
+    border: solid red 2px;
+    width: 100%
+  }
+</style>

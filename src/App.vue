@@ -15,10 +15,17 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  display: flex;
+  flex-direction: row;
+  border: solid salmon 2px
 }
 
 #nav {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  border: solid black 2px
 }
 
 #nav a {
