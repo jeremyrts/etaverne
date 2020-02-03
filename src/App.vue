@@ -119,17 +119,23 @@ body {
   color: white;
 }
 #nav a.router-link-exact-active {
-  color: #992BE5
+  color: #992BE5;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .blank {
   width: 10%;
 }
 .items-container {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  margin: 20px 0;
 }
 .item-nav {
   margin: 20px 0;
+  padding: 20px;
+}
+.item-nav:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .item-container {
   display: flex;
@@ -146,8 +152,6 @@ body {
 .logo-container {
   width: 20px;
   height: 20px;
-  border: solid white 2px;
-  background-color: white;
   border-radius: 50%;
   padding: 5px
 }
