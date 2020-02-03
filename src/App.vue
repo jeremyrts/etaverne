@@ -51,9 +51,9 @@
       <div class="low-part">
         <p>E-Taverne ©2020</p>
         <div class="social-media-footer">
-          <FontAwesomeIcon class="logo-social-media" :icon="['fab', 'facebook-square']"/>
-          <FontAwesomeIcon class="logo-social-media" :icon="['fab', 'instagram']"/>
-          <FontAwesomeIcon class="logo-social-media" :icon="['fab', 'discord']"/>
+          <a href="https://www.facebook.com/LaETaverne/" target="_blank"><FontAwesomeIcon class="logo-social-media" :icon="['fab', 'facebook-square']"/></a>
+          <a href="https://www.instagram.com/e_taverne/" target="_blank"><FontAwesomeIcon class="logo-social-media" :icon="['fab', 'instagram']"/></a>
+          <a href="https://discordapp.com/invite/WRW5qYz" target="_blank"><FontAwesomeIcon class="logo-social-media" :icon="['fab', 'discord']"/></a>
         </div>
       </div>
     </div>
