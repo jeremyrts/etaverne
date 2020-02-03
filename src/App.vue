@@ -51,9 +51,9 @@
       <div class="low-part">
         <p>E-Taverne ©2020</p>
         <div class="social-media-footer">
-          <a href="https://www.facebook.com/LaETaverne/" target="_blank"><FontAwesomeIcon class="logo-social-media" :icon="['fab', 'facebook-square']"/></a>
-          <a href="https://www.instagram.com/e_taverne/" target="_blank"><FontAwesomeIcon class="logo-social-media" :icon="['fab', 'instagram']"/></a>
-          <a href="https://discordapp.com/invite/WRW5qYz" target="_blank"><FontAwesomeIcon class="logo-social-media" :icon="['fab', 'discord']"/></a>
+          <a href="https://www.facebook.com/LaETaverne/" target="_blank"><FontAwesomeIcon id="facebook" class="logo-social-media" :icon="['fab', 'facebook-square']"/></a>
+          <a href="https://www.instagram.com/e_taverne/" target="_blank"><FontAwesomeIcon id="instagram" class="logo-social-media" :icon="['fab', 'instagram']"/></a>
+          <a href="https://discordapp.com/invite/WRW5qYz" target="_blank"><FontAwesomeIcon id="discord" class="logo-social-media" :icon="['fab', 'discord']"/></a>
         </div>
       </div>
     </div>
@@ -163,5 +163,8 @@ body {
   color: white;
   font-size: 1.5em;
   margin: 0 10px;
+}
+.logo-social-media:hover {
+   color:#992BE5;
 }
 </style>
