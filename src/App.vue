@@ -5,11 +5,47 @@
         <div class="image-container">
           <img class="image" src="./assets/logo_etaverne.png" alt="">
         </div>
-        <div class="item-container">
-          <router-link class="item-nav" to="/">Live</router-link>
-          <router-link class="item-nav" to="/programmation">Programmation</router-link>
-          <router-link class="item-nav" to="/videos">Vidéos</router-link>
-          <router-link class="item-nav" to="/a-propos">À propos</router-link>
+        <div class="items-container">
+          <router-link class="item-nav" to="/">
+            <div class="item-container">
+              <div class="logo-container">
+                <img class="item-logo" src="./assets/menu/square.png" />
+              </div>
+              <div class="text">
+                Live
+              </div>
+            </div>
+          </router-link>
+          <router-link class="item-nav" to="/programmation"> 
+            <div class="item-container">
+              <div class="logo-container">
+                <img class="item-logo" src="./assets/menu/triangle.png" />
+              </div>
+              <div class="text">
+                Programmation
+              </div>
+            </div>
+          </router-link>
+          <router-link class="item-nav" to="/videos">
+            <div class="item-container">
+              <div class="logo-container">
+                <img class="item-logo" src="./assets/menu/circle.png" />
+              </div>
+              <div class="text">
+                Vidéos
+              </div>
+            </div>
+          </router-link>
+          <router-link class="item-nav" to="/a-propos">
+            <div class="item-container">
+              <div class="logo-container">
+                <img class="item-logo" src="./assets/menu/cross.png" />
+              </div>
+              <div class="text">
+                À propos
+              </div>
+            </div>
+          </router-link>
         </div>
       </div>
       <div class="low-part">
@@ -37,16 +73,18 @@
   text-align: center;
   color: #212121;
   display: flex;
-  flex-direction: row;
   height: 100%;
-  background-image: url("./assets/background.png");
-  background-repeat: repeat;
 }
 
 html,
 body {
   margin: 0;
   height: 100%;
+}
+body {
+  background-image: url("./assets/background.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 .image {
   width: 100px;
@@ -82,11 +120,32 @@ body {
 .blank {
   width: 100px;
 }
-.item-container {
+.items-container {
   display: flex;
   flex-direction: column
 }
 .item-nav {
   margin: 20px 0;
+}
+.item-container {
+  /* border: solid 2px green; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.text {
+  margin-left: 10px;
+}
+.item-logo {
+  width: 20px;
+  height: 20px;
+}
+.logo-container {
+  width: 20px;
+  height: 20px;
+  border: solid white 2px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px
 }
 </style>
