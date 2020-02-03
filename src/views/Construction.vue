@@ -1,6 +1,13 @@
 <template>
   <div class="construction">
-	  <h1>En construction</h1>
+	  <div class="content">
+		  <div class="icons">
+			  <FontAwesomeIcon class="icon" :icon="['fas', 'tools']"/>
+		  </div>
+		  <div class="text">
+		  	<h1>Page en construction</h1>
+		  </div>
+	  </div>
   </div>
 </template>
 
@@ -10,6 +17,25 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+	h1 {
+		font-size: 5em;
+	}
+	.construction {
+		position: relative;
+		width: 100%;
+		display: flex;
+	}
+	.content {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+		margin: auto;
+	}
+	.icon {
+		color: #FD7E1C; 
+		font-size: 5em;
+	}
 </style>
