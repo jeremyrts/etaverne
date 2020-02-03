@@ -1,7 +1,7 @@
 <template>
 	<div class="team-member">
 		<div class="image-container">
-			<p>UNE IMAGE</p>
+			<!-- <p>UNE IMAGE</p> -->
 		</div>
 		<div class="text-container">
 			<p id="pseudo">{{pseudo}}</p>
@@ -45,5 +45,6 @@ export default {
 		border: 4px solid #000000;
 		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
 		padding: 10px;
+		font-weight: bold;
 	}
 </style>
