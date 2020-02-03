@@ -60,10 +60,15 @@
     <!-- Blank div to center the content -->
     <div class="blank"></div>
     <router-view />
+    
   </div>
 </template>
 
 <script>
+
+export default {
+  name: "App",
+};
 
 </script>
 
@@ -117,7 +122,7 @@ body {
   color: #992BE5
 }
 .blank {
-  width: 100px;
+  width: 10%;
 }
 .items-container {
   display: flex;
