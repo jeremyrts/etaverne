@@ -3,7 +3,7 @@
     <div class="section twitch-container">
       <div class="player-container">
         <iframe
-          class="canvas"
+          class="canvas large"
           src="https://player.twitch.tv/?channel=e_taverne"
           height="450"
           width="800"
@@ -12,15 +12,55 @@
           allowfullscreen="<allowfullscreen>"
         >
         </iframe>
+        <iframe
+          class="canvas medium"
+          src="https://player.twitch.tv/?channel=e_taverne"
+          height="360"
+          width="640"
+          frameborder="<frameborder>"
+          scrolling="<scrolling>"
+          allowfullscreen="<allowfullscreen>"
+        >
+        </iframe>
+        <iframe
+          class="canvas small"
+          src="https://player.twitch.tv/?channel=e_taverne"
+          height="240"
+          width="426"
+          frameborder="<frameborder>"
+          scrolling="<scrolling>"
+          allowfullscreen="<allowfullscreen>"
+        >
+        </iframe>
       </div>
       <!-- iframe for the chat -->
       <iframe
-        class="canvas chat"
+        class="canvas chat large"
         frameborder="0"
         scrolling="no"
         id="chat_embed"
         src="https://www.twitch.tv/embed/e_taverne/chat"
         height="450"
+        width="300"
+      >
+      </iframe>
+      <iframe
+        class="canvas chat medium"
+        frameborder="0"
+        scrolling="no"
+        id="chat_embed"
+        src="https://www.twitch.tv/embed/e_taverne/chat"
+        height="360"
+        width="300"
+      >
+      </iframe>
+      <iframe
+        class="canvas chat small"
+        frameborder="0"
+        scrolling="no"
+        id="chat_embed"
+        src="https://www.twitch.tv/embed/e_taverne/chat"
+        height="240"
         width="300"
       >
       </iframe>
@@ -77,7 +117,36 @@ export default {
   box-sizing: border-box;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
   background-color: white;
+  display: none;
 }
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) and (max-width: 1824px) {
+  .small {
+    display: none
+  }
+  .medium {
+    display: inherit;
+  }
+  .large {
+    display: none;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+  .small {
+    display: none
+  }
+  .medium {
+    display: none;
+  }
+  .large {
+    display: inherit;
+  }
+}
+
+
 .chat {
   margin-left:80px
 }
