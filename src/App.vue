@@ -51,7 +51,9 @@
       <div class="low-part">
         <p>E-Taverne ©2020</p>
         <div class="social-media-footer">
-          <span>Les reseaux sociaux</span>
+          <FontAwesomeIcon class="logo-social-media" :icon="['fab', 'facebook-square']"/>
+          <FontAwesomeIcon class="logo-social-media" :icon="['fab', 'instagram']"/>
+          <FontAwesomeIcon class="logo-social-media" :icon="['fab', 'discord']"/>
         </div>
       </div>
     </div>
@@ -97,14 +99,11 @@ body {
   position: fixed;
   top:0;
   bottom: 0;
-  /* height: 100%; */
-  /* border: solid black 2px; */
   background-color: #212121;
 }
 
 #nav a, span {
   font-weight: bold;
-  /* color: #2c3e50; */
   color: white;
 }
 #nav a {
@@ -128,7 +127,6 @@ body {
   margin: 20px 0;
 }
 .item-container {
-  /* border: solid 2px green; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -147,5 +145,14 @@ body {
   background-color: white;
   border-radius: 50%;
   padding: 5px
+}
+.social-media-footer {
+  display: flex;
+  justify-content: center
+}
+.logo-social-media {
+  color: white;
+  font-size: 1.5em;
+  margin: 0 10px;
 }
 </style>
