@@ -6,46 +6,30 @@
           <img class="image" src="./assets/logo_etaverne.png" alt="">
         </div>
         <div class="items-container">
-          <router-link class="item-nav" to="/">
-            <div class="item-container">
-              <div class="logo-container">
-                <img class="item-logo" src="./assets/menu/square.png" />
-              </div>
-              <div class="text">
-                Live
-              </div>
-            </div>
-          </router-link>
-          <router-link class="item-nav" to="/programmation"> 
-            <div class="item-container">
-              <div class="logo-container">
-                <img class="item-logo" src="./assets/menu/triangle.png" />
-              </div>
-              <div class="text">
-                Programmation
-              </div>
-            </div>
-          </router-link>
-          <router-link class="item-nav" to="/videos">
-            <div class="item-container">
-              <div class="logo-container">
-                <img class="item-logo" src="./assets/menu/circle.png" />
-              </div>
-              <div class="text">
-                Vidéos
-              </div>
-            </div>
-          </router-link>
-          <router-link class="item-nav" to="/a-propos">
-            <div class="item-container">
-              <div class="logo-container">
-                <img class="item-logo" src="./assets/menu/cross.png" />
-              </div>
-              <div class="text">
-                À propos
-              </div>
-            </div>
-          </router-link>
+          <ItemMenu 
+            name="Live"
+            link="/"
+            urlImage='square'
+          >
+          </ItemMenu>
+          <ItemMenu 
+            name="Programmation"
+            link="/programmation"
+            urlImage='triangle'
+          >
+          </ItemMenu>
+          <ItemMenu 
+            name="Vidéos"
+            link="/videos"
+            urlImage='circle'
+          >
+          </ItemMenu>
+          <ItemMenu 
+            name="A propos"
+            link="/a-propos"
+            urlImage='cross'
+          >
+          </ItemMenu>
         </div>
       </div>
       <div class="low-part">
@@ -66,8 +50,14 @@
 
 <script>
 
+import ItemMenu from '@/components/ItemMenu'
+
+
 export default {
   name: "App",
+  components: {
+    ItemMenu
+  },
 };
 
 </script>
