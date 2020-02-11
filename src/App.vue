@@ -63,10 +63,9 @@ export default {
     ItemMenu,
   },
   mounted() {
-    console.log("mounted")
     const nav = document.getElementById("nav")
     const blankDiv = document.getElementById("blank")
-    console.log("Largeur: "+nav.offsetWidth)
+    // Allow the content-router to be centered regarding the fixed menu 
     blankDiv.style.minWidth = nav.offsetWidth+'px'
   }
 };
@@ -128,9 +127,7 @@ body {
   color: #992BE5;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
-.blank {
-  border: solid purple 2px;
-}
+
 .items-container {
   display: flex;
   flex-direction: column;
