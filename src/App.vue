@@ -98,7 +98,7 @@ body {
   background-attachment: fixed;
 }
 .image {
-  width: 100px;
+  width: 80px;
 }
 #nav {
   padding: 30px;
