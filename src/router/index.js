@@ -18,7 +18,8 @@ const routes = [
   {
     path: "/videos",
     name: "videos",
-    redirect: { name: 'construction' }
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Videos.vue")
   },
   {
     path: "/a-propos",
