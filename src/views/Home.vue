@@ -102,9 +102,9 @@ export default {
 
 <style scoped>
 .home {
-  width: 100%;
+  width: 80%;
   height: 100%;
-  margin-left: 100px
+  margin: 0 auto
 }
 .section {
   display: flex;

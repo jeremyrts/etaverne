@@ -73,6 +73,10 @@ export default {
 
 <style>
 
+.content-router {
+  margin: 0 auto
+}
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
