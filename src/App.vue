@@ -44,7 +44,9 @@
     <!-- Blank div to center the content -->
     <div id="blank"></div>
     <div class="content-router">
-      <router-view />
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
     </div>
     
   </div>
@@ -171,4 +173,22 @@ body {
 .logo-social-media:hover {
    color:#992BE5;
 }
+
+.fade-enter-active, .fade-leave-active {
+    transition: all .5s ease-out,
+  }
+
+/* .fade-leave-active {
+  transition: opacity .2s ease-in, transform .3s ease-in
+} */
+
+.fade-enter {
+  transform: translateX(-20px);
+  opacity: 0
+}
+.fade-leave-to {
+  transform: translateX(+20px);
+  opacity: 0
+}
+
 </style>
