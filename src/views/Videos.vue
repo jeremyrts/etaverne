@@ -1,29 +1,29 @@
 <template>
-  <div class="videos">
-    
-  </div>
+  <div id="videos"></div>
 </template>
 
 <script>
-    export default {
-
-    }
-    let videos;
-    let XML = new XMLHttpRequest();
-    XML.open("GET", "https://api.twitch.tv/helix/videos?user_id=268985773");
-    XML.setRequestHeader('Client-ID', 'd75dgiycfc2gqlbl2l6z2g0pk9er4m');
-    XML.send();
-    XML.onload = function () {
-        videos = JSON.parse(XML.response);
-        console.log(videos);
-
-        
-    }
-
+export default {};
+let videos;
+let XML = new XMLHttpRequest();
+XML.open("GET", "https://api.twitch.tv/helix/videos?user_id=268985773");
+XML.setRequestHeader("Client-ID", "d75dgiycfc2gqlbl2l6z2g0pk9er4m");
+XML.send();
+XML.onload = function() {
+  videos = JSON.parse(XML.response);
+  console.log(videos);
+  let html="";
+  console.log(html);
+  for (let videoItem of videos.data) {
+    html += `<div class="grid-item">` + videoItem.title + `</div>`;
+    console.log(videoItem);
+  }
+  document.getElementById("videos").innerHTML = html;
+};
 </script>
 
 <style scoped>
-    .videos{
-        display: grid;
-    }
+#videos {
+  display: grid;
+}
 </style>
