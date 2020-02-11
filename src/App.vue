@@ -42,8 +42,10 @@
       </div>
     </div>
     <!-- Blank div to center the content -->
-    <div class="blank"></div>
-    <router-view />
+    <div id="blank"></div>
+    <div class="content-router">
+      <router-view />
+    </div>
     
   </div>
 </template>
@@ -56,13 +58,21 @@ import ItemMenu from '@/components/ItemMenu'
 export default {
   name: "App",
   components: {
-    ItemMenu
+    ItemMenu,
   },
+  mounted() {
+    console.log("mounted")
+    const nav = document.getElementById("nav")
+    const blankDiv = document.getElementById("blank")
+    console.log("Largeur: "+nav.offsetWidth)
+    blankDiv.style.minWidth = nav.offsetWidth+'px'
+  }
 };
 
 </script>
 
 <style>
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -113,7 +123,7 @@ body {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .blank {
-  width: 10%;
+  border: solid purple 2px;
 }
 .items-container {
   display: flex;
