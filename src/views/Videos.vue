@@ -1,10 +1,19 @@
 <template>
   <div id="videos">
-    <h2>Videos Twitch</h2>
-    <div id="videos-twitch"></div>
-    <h2>Clips Twitch</h2>
-    <div id="clips-twitch"></div>
-    <div id="videos-youtube"></div>
+    <div class="header">
+      <h1>Dernières vidéos</h1>
+    </div>
+    <div class="content">
+      <div class="videos-twitch-container">
+        <h2>Vidéos Twitch</h2>
+        <div id="videos-twitch"></div>
+      </div>
+      <div class="clips-twitch-container">
+        <h2>Clips Twitch</h2>
+        <div id="clips-twitch"></div>
+      </div>
+      <div id="videos-youtube"></div>
+    </div>
   </div>
 </template>
 
@@ -20,9 +29,7 @@ export default {
     XML.send();
     XML.onload = function() {
       const videos = JSON.parse(XML.response);
-      console.log(videos);
       let html = "";
-      console.log(html);
       for (let videoIndex in videos.data) {
         let videoItem = videos.data[videoIndex];
         let background = videoItem.thumbnail_url;
@@ -71,7 +78,6 @@ export default {
           break;
         }
       }
-      console.log(htmlClip);
       document.getElementById("clips-twitch").innerHTML = htmlClip;
       document.getElementById("image-plus-clip").src = imagePlus;
     };
@@ -102,19 +108,36 @@ export default {
 }
 </style>
 <style scoped>
+#videos {
+  padding: 20px 0 40px 0;
+  width: 100%;
+}
+.header {
+  margin: 30px 0;
+}
+h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
 h2 {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin: 100px 0 0 0;
   font-size: 2em;
+  text-align: left;
+  background-color: #212121;
+  color: white;
+  padding: 20px;
 }
-#videos-twitch {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
+.videos-twitch-container,
+.clips-twitch-container {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+#videos-twitch,
 #clips-twitch {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
+  background-color: white;
+  width: 100%;
+  padding: 10px 0 70px 0;
 }
 </style>

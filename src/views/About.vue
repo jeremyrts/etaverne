@@ -39,11 +39,14 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
 h2,
 p {
   text-align: left;
 }
-
 section {
   color: #f9f9f9;
   background-color: #212121;
