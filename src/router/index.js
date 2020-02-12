@@ -13,7 +13,7 @@ const routes = [
   {
     path: "/programmation",
     name: "programmation",
-    redirect: { name: 'construction' }
+    redirect: { name: "construction" }
   },
   {
     path: "/videos",

@@ -89,7 +89,7 @@ export default {
   components: {
     // VueTwitchPlayer,
     Pannel,
-    TeamMember,
+    TeamMember
   },
 
   data() {
@@ -104,7 +104,7 @@ export default {
 .home {
   width: 80%;
   height: 100%;
-  margin: 0 auto
+  margin: 0 auto;
 }
 .section {
   display: flex;
@@ -121,9 +121,9 @@ export default {
 }
 
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) and (max-width: 1824px) {
+@media only screen and (min-width: 1224px) and (max-width: 1824px) {
   .small {
-    display: none
+    display: none;
   }
   .medium {
     display: inherit;
@@ -134,9 +134,9 @@ export default {
 }
 
 /* Large screens ----------- */
-@media only screen  and (min-width : 1824px) {
+@media only screen and (min-width: 1824px) {
   .small {
-    display: none
+    display: none;
   }
   .medium {
     display: none;
@@ -146,14 +146,13 @@ export default {
   }
 }
 
-
 .chat {
-  margin-left:80px
+  margin-left: 80px;
 }
 .social-media-pannel {
   justify-content: space-around;
   width: 80%;
-  margin: auto
+  margin: auto;
 }
 .team {
   flex-wrap: wrap;
