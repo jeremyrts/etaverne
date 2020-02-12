@@ -10,16 +10,20 @@
 </template>
 
 <script>
+
+
+
 export default {
   name: "Videos",
   mounted() {
-    let videos;
-    let XML = new XMLHttpRequest();
+    const image = require.context("../assets/", false, /\.png$/)
+    const imagePlus = image('./plus.png')
+    const XML = new XMLHttpRequest();
     XML.open("GET", "https://api.twitch.tv/helix/videos?user_id=268985773");
     XML.setRequestHeader("Client-ID", "d75dgiycfc2gqlbl2l6z2g0pk9er4m");
     XML.send();
     XML.onload = function() {
-      videos = JSON.parse(XML.response);
+      const videos = JSON.parse(XML.response);
       console.log(videos);
       let html = "";
       console.log(html);
@@ -36,14 +40,17 @@ export default {
         videoItem.title +
         `</div></a>`;
         if (videoIndex >= 6) {
-          html += `<a target="_blank" href="https://www.twitch.tv/e_taverne/videos" class="grid-item"><img class="item-image" src="'./assets/plus.png'" alt=""/><div class="item-title">Voir plus</div></a>`;
+          html += `<a target="_blank" href="https://www.twitch.tv/e_taverne/videos" class="grid-item"><img id="image-plus-videos" class="item-image" src="" alt=""/><div class="item-title">Voir plus</div></a>`;
+          
         break;
         }
       }
-      document.getElementById("videos-twitch").innerHTML = html;
+      document.getElementById("videos-twitch").innerHTML = html
+      document.getElementById("image-plus-videos").src = imagePlus
+
+      
     };
-    let clips;
-    let XMLClip = new XMLHttpRequest();
+    const XMLClip = new XMLHttpRequest();
     XMLClip.open(
       "GET",
       "https://api.twitch.tv/helix/clips?broadcaster_id=268985773"
@@ -51,7 +58,7 @@ export default {
     XMLClip.setRequestHeader("Client-ID", "d75dgiycfc2gqlbl2l6z2g0pk9er4m");
     XMLClip.send();
     XMLClip.onload = function() {
-      clips = JSON.parse(XMLClip.response);
+      const clips = JSON.parse(XMLClip.response);
       let htmlClip = "";
       for (let clipIndex in clips.data) {
         let clipItem = clips.data[clipIndex];
@@ -64,14 +71,15 @@ export default {
         clipItem.title +
         `</div></a>`;
         if (clipIndex >= 6) {
-          htmlClip += `<a target="_blank" href="https://www.twitch.tv/e_taverne/clips" class="grid-item"><img class="item-image" src="'./assets/plus.png'" alt=""/><div class="item-title">Voir plus</div></a>`;
+          htmlClip += `<a target="_blank" href="https://www.twitch.tv/e_taverne/clips" class="grid-item"><img id="image-plus-clip" class="item-image" src="" alt=""/><div class="item-title">Voir plus</div></a>`;
           break;
         }
       }
       console.log(htmlClip);
-      document.getElementById("clips-twitch").innerHTML = htmlClip;
+      document.getElementById("clips-twitch").innerHTML = htmlClip
+      document.getElementById("image-plus-clip").src = imagePlus
     };
-  }
+  } 
 };
 
 </script>
