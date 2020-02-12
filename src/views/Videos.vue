@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div id="videos">
     <h2>Videos Twitch</h2>
     <div id="videos-twitch"></div>
@@ -6,6 +7,9 @@
     <div id="clips-twitch"></div>
     <div id="videos-youtube"></div>
   </div>
+=======
+  <div id="videos"></div>
+>>>>>>> videos-api
 </template>
 
 <script>
@@ -18,6 +22,7 @@ XML.send();
 XML.onload = function() {
   videos = JSON.parse(XML.response);
   console.log(videos);
+<<<<<<< HEAD
   let html = "";
   console.log(html);
   for (let videoIndex in videos.data) {
@@ -107,5 +112,20 @@ h2 {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
+=======
+  let html="";
+  console.log(html);
+  for (let videoItem of videos.data) {
+    html += `<div class="grid-item">` + videoItem.title + `</div>`;
+    console.log(videoItem);
+  }
+  document.getElementById("videos").innerHTML = html;
+};
+</script>
+
+<style scoped>
+#videos {
+  display: grid;
+>>>>>>> videos-api
 }
 </style>
