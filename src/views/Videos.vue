@@ -93,11 +93,11 @@ export default {
   text-decoration: none;
   font-weight: bold;
   color: black;
-  transition: transform 0.5s;
+  transition: transform 0.4s;
 }
 .grid-item:hover {
   color: #992be5;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .item-image {
   height: 180px;
@@ -139,5 +139,8 @@ h2 {
   background-color: white;
   width: 100%;
   padding: 10px 0 70px 0;
+}
+#videos {
+  margin-bottom: 40px;
 }
 </style>
