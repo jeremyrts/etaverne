@@ -87,11 +87,11 @@ export default {
   text-decoration: none;
   font-weight: bold;
   color: black;
-  transition: transform 0.5s;
+  transition: transform 0.4s;
 }
 .grid-item:hover {
   color: #992be5;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .item-image {
   height: 180px;
@@ -116,5 +116,8 @@ h2 {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
+}
+#videos {
+  margin-bottom: 40px;
 }
 </style>
