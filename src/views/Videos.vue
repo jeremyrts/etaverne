@@ -138,7 +138,7 @@ h2 {
   grid-gap: 20px;
   background-color: white;
   width: 100%;
-  padding: 10px 0 70px 0;
+  padding: 30px 0 50px 0;
 }
 #videos {
   margin-bottom: 40px;
