@@ -5,26 +5,23 @@
     </div>
     <div class="content">
       <section>
-        <h2>Un premier titre de section</h2>
+        <h2>Qui sommes nous ?</h2>
         <p>
-          Ut in sem ligula. Sed et dignissim augue. Fusce a enim ut magna porta
-          tincidunt eu non enim. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. In vitae feugiat velit, quis convallis ligula.
-          Aliquam dapibus tellus enim, ut accumsan nunc vestibulum nec.
-          Phasellus quis elit ex. Vestibulum scelerisque quam quis diam.
-          Scelerisque eu lacinia massa cursus fringilla. Aenean et faucibus
-          metus. Quisque in commodo augue.
+          E-Taverne est un club de l’association étudiante U-Geek (Université Gustave Eiffel) 
+          qui a pour but de fournir du contenu gaming diffusé sous forme de directs (streams) sur la plateforme Twitch.<br/>
+          Nous sommes avant tout une communauté d’adeptes aux jeux vidéos, avec pour but de proposer des sorties, des événements, 
+          des bêta-tests, mais surtout des lives divertissants et variés. 
+
         </p>
       </section>
       <section>
-        <h2>Un autre titre</h2>
+        <h2>A qui s’adresse le club ?</h2>
         <p>
-          Duis nec dui hendrerit, efficitur neque in, sollicitudin ipsum.
-          Quisque a consectetur lorem, ut scelerisque mi. Donec vel sem commodo
-          lorem pulvinar tristique. Praesent vehicula volutpat eros a semper. In
-          nibh dolor, suscipit vel dictum non, euismod et urna. Sed venenatis
-          nibh at gravida mattis. Curabitur varius erat nisi, ut porttitor metus
-          pellentesque sed.
+          SolaryTV,  LeStream te vendent du rêve ? Tu veux te laisser tenter par le direct ? 
+          Tu es la bienvenue quelque soit ton niveau de connaissance dans le domaine ! Nous t’aiderons à mettre en place 
+          ton premier stream, savoir utiliser un stream deck, un boitier d’acquisition … <br/>
+          Tu n’es pas trop stream ? Tu aimes les jeux-vidéos ? Viens participer avec nous à nos lives, que ce soit IRL, 
+          ou dans le chat sur www.twitch.tv/e_taverne ;) Peut être que tu repartiras  avec quelques petits lots ! 
         </p>
       </section>
     </div>
@@ -45,7 +42,7 @@ h1 {
 }
 h2,
 p {
-  text-align: left;
+  text-align: justify;
 }
 section {
   color: #f9f9f9;
