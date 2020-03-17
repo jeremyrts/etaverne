@@ -65,11 +65,6 @@
       >
       </iframe>
     </div>
-    <div class="section social-media-pannel">
-      <Pannel :socialMedia="'Facebook'"></Pannel>
-      <Pannel :socialMedia="'Instagram'"></Pannel>
-      <Pannel :socialMedia="'Discord'"></Pannel>
-    </div>
     <div class="section team">
       <TeamMember :pseudo="'Auram'"></TeamMember>
       <TeamMember :pseudo="'Reyxwe'"></TeamMember>
@@ -80,15 +75,10 @@
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
-// import VueTwitchPlayer from "vue-twitch-player";
-import Pannel from "@/components/Pannel.vue";
 import TeamMember from "@/components/TeamMember.vue";
 export default {
   name: "home",
   components: {
-    // VueTwitchPlayer,
-    Pannel,
     TeamMember
   },
 
