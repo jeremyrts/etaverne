@@ -91,8 +91,8 @@ body {
 }
 body {
   background-image: url("./assets/background.png");
-  background-repeat: repeat;
-  background-attachment: fixed;
+  background-repeat:repeat;
+  background-attachment:initial;
 }
 .image {
   width: 80px;
