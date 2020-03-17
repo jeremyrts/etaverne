@@ -19,9 +19,9 @@
         <p>
           SolaryTV,  LeStream te vendent du rêve ? Tu veux te laisser tenter par le direct ? 
           Tu es la bienvenue quelque soit ton niveau de connaissance dans le domaine ! Nous t’aiderons à mettre en place 
-          ton premier stream, savoir utiliser un stream deck, un boitier d’acquisition … <br/>
+          ton premier stream, savoir utiliser un stream deck, un boitier d’acquisition… <br/>
           Tu n’es pas trop stream ? Tu aimes les jeux-vidéos ? Viens participer avec nous à nos lives, que ce soit IRL, 
-          ou dans le chat sur www.twitch.tv/e_taverne ;) Peut être que tu repartiras  avec quelques petits lots ! 
+          ou dans le chat sur le live ;) Peut être que tu repartiras  avec quelques petits lots ! 
         </p>
       </section>
     </div>
