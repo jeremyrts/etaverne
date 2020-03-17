@@ -13,7 +13,8 @@ const routes = [
   {
     path: "/programmation",
     name: "programmation",
-    redirect: { name: "construction" }
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Program.vue")
   },
   {
     path: "/videos",
