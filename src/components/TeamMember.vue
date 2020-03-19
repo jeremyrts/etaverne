@@ -2,25 +2,42 @@
   <div class="team-member">
     <div class="image-container">
       <!-- <p>UNE IMAGE</p> -->
+      <img :src="getImgUrl(filePicture)" alt="" id="streamerPicture">
     </div>
     <div class="text-container">
       <p id="pseudo">{{ pseudo }}</p>
       <p>
-        Nullam scelerisque, neque vel varius pulvinar, urna massa faucibus nibh,
-        a fringilla arcu dui ullamcorper erat. Praesent id lacus vestibulum,
-        tristique urna a, porttitor nulla.
+        {{description}}
       </p>
     </div>
   </div>
 </template>
 
 <script>
+
+
+
 export default {
   name: "home",
   props: {
     pseudo: {
       type: String,
       default: "Auram"
+    },
+    filePicture: {
+      type: String,
+      default: "Exin.jpg"
+    },
+    description: {
+      type: String,
+      default: "Example of description"
+    }
+  },
+  methods: {
+    // Let the images be seen by webpack before all the single script compilation (the path doesn't exist then)
+    getImgUrl(file){
+      const images = require.context('../assets/streamerPicture', false, /\.jpg$/)
+      return images('./' + file)
     }
   }
 };
