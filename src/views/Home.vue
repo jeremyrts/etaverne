@@ -66,24 +66,29 @@
       </iframe>
     </div>
     <div class="section team">
-      <TeamMember 
-        :pseudo="'Exin'"
-        :description="'Je m\'appelle Exin, j\'ai 21 ans. Je streame actuellement Final Fantasy VIII remaster et Ni No Kuni. Retrouvez-moi pour des streams tranquilles souvent l\'après-midi.'"
-      >
-      </TeamMember>
-      <TeamMember 
-        :pseudo="'Amassan'"
-        :description="'Antonin Leuret, freelance en design graphique et motion design, passionné de jeux vidéo, amoureux de plantes vertes.'"
-        :filePicture="'Amassan.jpg'"
-        :instagramLink="'https://www.instagram.com/_antonin_lrt/'"
-      >
-      </TeamMember>
-      <TeamMember 
-        :pseudo="'SCEL'"
-        :description="'Passionné de jeux de combat, il est commentateur spécialisé dans Street Fighter 2 et Super Smash Bros Ultimate. Au delà de ça, il est également speedrunner sur Nuclear Throne et Hotline Miami 2. Enfin, il est également maître du jeu et joueur sur des jeux de rôle notamment Donjons et Dragons'"
-        :filePicture="'SCEL.jpg'"
-      >
-      </TeamMember>
+      <div>
+        <h2>Nos streamers</h2>
+      </div>
+      <div class="team-content">
+        <TeamMember 
+          :pseudo="'Exin'"
+          :description="'Je m\'appelle Exin, j\'ai 21 ans. Je streame actuellement Final Fantasy VIII remaster et Ni No Kuni. Retrouvez-moi pour des streams tranquilles souvent l\'après-midi.'"
+        >
+        </TeamMember>
+        <TeamMember 
+          :pseudo="'Amassan'"
+          :description="'Antonin Leuret, freelance en design graphique et motion design, passionné de jeux vidéo, amoureux de plantes vertes.'"
+          :filePicture="'Amassan.jpg'"
+          :instagramLink="'https://www.instagram.com/_antonin_lrt/'"
+        >
+        </TeamMember>
+        <TeamMember 
+          :pseudo="'SCEL'"
+          :description="'Passionné de jeux de combat, il est commentateur spécialisé dans Street Fighter 2 et Super Smash Bros Ultimate. Au delà de ça, il est également speedrunner sur Nuclear Throne et Hotline Miami 2. Enfin, il est également maître du jeu et joueur sur des jeux de rôle notamment Donjons et Dragons'"
+          :filePicture="'SCEL.jpg'"
+        >
+        </TeamMember>
+      </div>
     </div>
   </div>
 </template>
@@ -106,6 +111,9 @@ export default {
 </script>
 
 <style scoped>
+h2 {
+  display: inline;
+}
 .home {
   width: 100%;
   height: 100%;
@@ -164,13 +172,21 @@ export default {
   margin: auto;
 }
 .team {
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
   justify-content: space-evenly;
-  align-content: flex-start;
-  width: 75%;
+  /* align-content: flex-start; */
+  width: 80%;
   margin: 30px auto;
   padding: 30px;
   background-color: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.team-content {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 </style>
