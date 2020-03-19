@@ -66,9 +66,23 @@
       </iframe>
     </div>
     <div class="section team">
-      <TeamMember :pseudo="'Auram'"></TeamMember>
-      <TeamMember :pseudo="'Reyxwe'"></TeamMember>
-      <TeamMember :pseudo="'Vexos'"></TeamMember>
+      <TeamMember 
+        :pseudo="'Exin'"
+        :description="'Je m\'appelle Exin, j\'ai 21 ans. Je streame actuellement Final Fantasy VIII remaster et Ni No Kuni. Retrouvez-moi pour des streams tranquilles souvent l\'après-midi.'"
+      >
+      </TeamMember>
+      <TeamMember 
+        :pseudo="'Amassan'"
+        :description="'Antonin Leuret, freelance en design graphique et motion design, passionné de jeux vidéo, amoureux de plantes vertes'"
+        :filePicture="'Amassan.jpg'"
+      >
+      </TeamMember>
+      <TeamMember 
+        :pseudo="'SCEL'"
+        :description="'Passionné de jeux de combat, il est commentateur spécialisé dans Street Fighter 2 et Super Smash Bros Ultimate. Au delà de ça, il est également speedrunner sur Nuclear Throne et Hotline Miami 2. Enfin, il est également maître du jeu et joueur sur des jeux de rôle notamment Donjons et Dragons'"
+        :filePicture="'SCEL.jpg'"
+      >
+      </TeamMember>
     </div>
   </div>
 </template>
@@ -101,6 +115,10 @@ export default {
   flex-direction: row;
   justify-content: center;
   margin: 50px 0;
+}
+.team {
+  justify-content: space-around;
+  
 }
 .canvas {
   border: 4px solid #000000;
