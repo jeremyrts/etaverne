@@ -73,7 +73,7 @@
       </TeamMember>
       <TeamMember 
         :pseudo="'Amassan'"
-        :description="'Antonin Leuret, freelance en design graphique et motion design, passionné de jeux vidéo, amoureux de plantes vertes'"
+        :description="'Antonin Leuret, freelance en design graphique et motion design, passionné de jeux vidéo, amoureux de plantes vertes.'"
         :filePicture="'Amassan.jpg'"
         :instagramLink="'https://www.instagram.com/_antonin_lrt/'"
       >
