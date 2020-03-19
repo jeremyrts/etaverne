@@ -75,6 +75,7 @@
         :pseudo="'Amassan'"
         :description="'Antonin Leuret, freelance en design graphique et motion design, passionné de jeux vidéo, amoureux de plantes vertes'"
         :filePicture="'Amassan.jpg'"
+        :instagramLink="'https://www.instagram.com/_antonin_lrt/'"
       >
       </TeamMember>
       <TeamMember 
@@ -106,7 +107,7 @@ export default {
 
 <style scoped>
 .home {
-  width: 80%;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
 }

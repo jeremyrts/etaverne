@@ -9,7 +9,12 @@
       <p>
         {{description}}
       </p>
-      <p v-if="instagramLink">{{instagramLink}}</p>
+      <a v-if="instagramLink" :href="instagramLink ? instagramLink : ''" target="_blank">
+        <FontAwesomeIcon
+              class="logo-social-media social-media-member"
+              :icon="['fab', 'instagram']"
+        />
+      </a>
     </div>
   </div>
 </template>
@@ -51,7 +56,7 @@ export default {
 .team-member {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  margin: 0 30px;
   align-items: center;
   width: 300px;
 }
@@ -71,4 +76,11 @@ p#pseudo {
   padding: 10px;
   font-weight: bold;
 }
+.social-media-member {
+  color: #212121
+}
+.social-media-member:hover {
+  color: #992be5
+}
+
 </style>
