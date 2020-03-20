@@ -96,6 +96,14 @@
           :facebookLink="'https://facebook.com/julian.leuret'"
         >
         </TeamMember>
+        <TeamMember 
+          :pseudo="'Zazar'"
+          :description="'Je suis Zazar le Ouaouaron, surtout connu pour être Baptiste Ory. Je vous propose des streams de jeux indés, de gestion, de stratégie (Civilization <3) ou de douces petites pépites rétros...'"
+          :filePicture="'Zazar.jpg'"
+          :portfolioLink="'https://orybaptiste.fr/'"
+          :instagramLink="'https://www.instagram.com/baptisteory/'"
+        >
+        </TeamMember>
       </div>
     </div>
   </div>

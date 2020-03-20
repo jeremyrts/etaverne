@@ -13,6 +13,12 @@
       </div>
     </div>
     <div class="social-media-container">
+      <a v-if="portfolioLink" :href="portfolioLink ? portfolioLink : ''" target="_blank">
+        <FontAwesomeIcon
+              class="logo-social-media social-media-member"
+              :icon="['fa', 'link']"
+        />
+      </a>
       <a v-if="instagramLink" :href="instagramLink ? instagramLink : ''" target="_blank">
         <FontAwesomeIcon
               class="logo-social-media social-media-member"
@@ -47,6 +53,9 @@ export default {
     description: {
       type: String,
       default: "Example of description"
+    },
+    portfolioLink: {
+      type: String,
     },
     instagramLink: {
       type: String,
