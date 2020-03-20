@@ -81,7 +81,7 @@ export default {
   margin: 30px 30px;
   align-items: center;
   width: 250px;
-  /* height: 400px; */
+  background-color: #F9F9F9;
   padding: 10px 20px;
   border: 4px solid #000000;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);

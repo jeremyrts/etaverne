@@ -66,8 +66,8 @@
       </iframe>
     </div>
     <div class="section team">
-      <div>
-        <h2>Nos streamers</h2>
+      <div id="streamer-title">
+        <h2>LES STREAMERS</h2>
       </div>
       <div class="team-content">
         <TeamMember 
@@ -141,20 +141,45 @@ h2 {
   justify-content: center;
   margin: 50px 0;
 }
-.team {
-  justify-content: space-around;
-  
-}
-.canvas {
+.canvas, #streamer-title {
   border: 4px solid #000000;
   box-sizing: border-box;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
-  background-color: white;
+  background-color: white; 
+}
+#streamer-title {
+  width: 500px;
+  margin: 0 auto; 
+}
+.canvas {
   display: none;
 }
 
+/* Mobile ---------- */ 
+@media only screen and (max-width: 799px) {
+  .team-content {
+    grid-template-columns: 1fr;
+  }
+}
+/* Tablet ---------- */ 
+@media only screen and (min-width: 800px) and (max-width: 1223px) {
+  .small {
+    display: inherit;
+  }
+  .medium {
+    display: none;
+  }
+  .large {
+    display: none;
+  }
+  .team-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) and (max-width: 1824px) {
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .small {
     display: none;
   }
@@ -163,6 +188,9 @@ h2 {
   }
   .large {
     display: none;
+  }
+  .team-content {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -177,6 +205,9 @@ h2 {
   .large {
     display: inherit;
   }
+  .team-content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .chat {
@@ -188,21 +219,14 @@ h2 {
   margin: auto;
 }
 .team {
-  /* flex-wrap: wrap; */
   flex-direction: column;
   justify-content: space-evenly;
-  /* align-content: flex-start; */
-  width: 80%;
+  width: 100%;
   margin: 30px auto;
   padding: 30px;
-  background-color: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .team-content {
-  align-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  margin: auto;
+  display: grid;
 }
 </style>
