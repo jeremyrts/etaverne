@@ -221,8 +221,7 @@ h2 {
 .team {
   flex-direction: column;
   justify-content: space-evenly;
-  width: 100%;
-  margin: 30px auto;
+  margin: auto;
   padding: 30px;
 }
 .team-content {
