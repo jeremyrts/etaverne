@@ -92,7 +92,7 @@
         <TeamMember 
           :pseudo="'Dwalim5'"
           :description="'Nain solitaire et farmeur fou de trophées et hauts faits.'"
-          :filePicture="'Dwalim.jpg'"
+          :filePicture="'Dwalim5.jpg'"
           :facebookLink="'https://facebook.com/julian.leuret'"
         >
         </TeamMember>
