@@ -7,12 +7,12 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faFacebookSquare,
   faInstagram,
-  faDiscord
+  faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
-import { faTools } from "@fortawesome/free-solid-svg-icons";
+import { faTools, faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faFacebookSquare, faInstagram, faDiscord, faTools);
+library.add(faFacebookSquare, faInstagram, faDiscord, faTools, faLink);
 Vue.component("FontAwesomeIcon", FontAwesomeIcon); // Give a better component name
 
 Vue.use(LoadScript);
