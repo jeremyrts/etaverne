@@ -80,12 +80,20 @@
           :description="'Antonin Leuret, freelance en design graphique et motion design, passionné de jeux vidéo, amoureux de plantes vertes.'"
           :filePicture="'Amassan.jpg'"
           :instagramLink="'https://www.instagram.com/_antonin_lrt/'"
+          
         >
         </TeamMember>
         <TeamMember 
           :pseudo="'SCEL'"
-          :description="'Passionné de jeux de combat, il est commentateur spécialisé dans Street Fighter 2 et Super Smash Bros Ultimate. Au delà de ça, il est également speedrunner sur Nuclear Throne et Hotline Miami 2. Enfin, il est également maître du jeu et joueur sur des jeux de rôle notamment Donjons et Dragons'"
+          :description="'Passionné de jeux de combat, il est commentateur spécialisé dans Street Fighter 2 et Super Smash Bros Ultimate. Au delà de ça, il est également speedrunner sur Nuclear Throne et Hotline Miami 2. Enfin, il est également maître du jeu et joueur sur des jeux de rôle notamment Donjons et Dragons.'"
           :filePicture="'SCEL.jpg'"
+        >
+        </TeamMember>
+        <TeamMember 
+          :pseudo="'Dwalim5'"
+          :description="'Nain solitaire et farmeur fou de trophées et hauts faits.'"
+          :filePicture="'Dwalim.jpg'"
+          :facebookLink="'https://facebook.com/julian.leuret'"
         >
         </TeamMember>
       </div>
